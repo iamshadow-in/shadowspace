@@ -32,6 +32,11 @@ header {
     justify-content: space-between;
 }
 
+.companyName {
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .profile img {
     width: 30px;
     border-radius: 50%;
