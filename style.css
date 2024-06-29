@@ -1,228 +1,110 @@
-/* Reset some basic styles */
-body, h1, h2, h3, p, ul, li, a, form, input, textarea, button {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: none;
     box-sizing: border-box;
+    font-family: raleway;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Header styles */
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: black;
-    color: white;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1em;
-}
-
-header nav a:hover {
-    color: red;
-}
-
-/* Landing page styles */
-#landing {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-#landing h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-#landing p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: darkred;
-}
-
-/* About section styles */
-#about {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    color: black;
-}
-
-#about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-#about h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-#about ul {
-    list-style: none;
-}
-
-#about ul li {
-    background-color: red;
-    color: white;
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 3px;
-}
-
-/* Projects section styles */
-#projects {
-    padding: 40px 20px;
-}
-
-#projects h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.project {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
-}
-
-.project h3 {
-    font-size: 1.5em;
-    color: red;
-    margin-bottom: 10px;
-}
-
-.project p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.project a {
-    color: red;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Experience section styles */
-#experience {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    color: black;
-}
-
-#experience h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#experience h3 {
-    font-size: 1.5em;
-    color: red;
-    margin-bottom: 10px;
-}
-
-#experience p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-/* Contact section styles */
-#contact {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#contact form {
-    display: inline-block;
-    text-align: left;
-    max-width: 600px;
-    width: 100%;
-}
-
-#contact label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
+    background-color: #111;
+    color: whitesmoke;
 }
 
-#contact button {
-    background-color: red;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1em;
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    backdrop-filter: blur(5px);
+    top: 10px;
+    left: 10px;
+    right: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    background-color: #1a1a1a;
+    height: 60px;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#contact button:hover {
-    background-color: darkred;
+.profile img {
+    width: 30px;
+    border-radius: 50%;
 }
 
-/* Footer styles */
+
+.routine {
+    background-color: #1a1a1a;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tasks {
+    background-color: #111;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.tasks ul li {
+    margin-left: 30px;
+}
+
+.budget {
+    background-color: #1a1a1a;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.income {
+    background-color: #111;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.income ul li {
+    margin-left: 30px;
+}
+
+.spending {
+    background-color: #111;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.spending ul li {
+    margin-left: 30px;
+}
+
+.yourName {
+    display: inline-block;
+    margin-left: 8%;
+}
+
+.space {
+    margin-left: 25%;
+    font-size: 13px;
+    display: inline-block;
+}
+
 footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: black;
-    color: white;
-    margin-top: 20px;
-}
-
-footer p {
-    font-size: 1em;
+    position: sticky;
+    backdrop-filter: blur(5px);
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
 }
